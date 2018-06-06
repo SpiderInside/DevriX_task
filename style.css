@@ -6,3 +6,53 @@
 .hidden{
     display: none;
 }
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+.floated{
+    float:left;
+}
+
+.row-container{
+    margin-bottom: 20px;
+    padding:10px 0px;
+    border-bottom: 1px solid;
+    display: table;
+    width:100%;
+    text-align: left;
+}
+.row-container *{
+    box-sizing: border-box;
+    font-family: Verdana, sans-serif;
+}
+.row-container h2{
+    margin:0px;
+    margin-bottom: 10px;
+}
+.row-container .text-container{
+    padding-left:20px;
+}
+.row-container .text-container h2 a{
+    color:#00008b;
+    text-decoration:none;
+}
+.row-container .date-container{
+    padding:0px 10px;
+    width: 130px;
+}
+.row-container .date-container span{
+    display: table-cell;
+    vertical-align: middle;
+}
+.table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
