@@ -3,3 +3,6 @@
     Author     : Ivan Hristov
 */
 
+.hidden{
+    display: none;
+}
